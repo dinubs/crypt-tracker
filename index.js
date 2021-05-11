@@ -47,7 +47,7 @@ async function getFormattedCoinData({ slug, holding }) {
   const ticker = data.data.site.ticker.text;
   const price = data.data.site.price.text;
   const holdingValue = '$' + (parseFloat(price.replace('$', '')) * holding).toFixed(2);
-  console.log(ticker, price);
+
   return {
     ticker,
     price,
